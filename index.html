@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五行穿搭指南 - 东方玄学时尚搭配专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">五行穿搭</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="hover:text-gray-600">特色</a>
+                    <a href="#how-it-works" class="hover:text-gray-600">使用方法</a>
+                    <a href="#faq" class="hover:text-gray-600">常见问题</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero区域 -->
+    <section class="pt-32 pb-20 px-6 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-8">探索东方玄学之美</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-12">基于五行理论的个性化穿搭指南</p>
+            <div class="max-w-2xl mx-auto bg-white rounded-xl p-8 shadow-lg">
+                <div class="mb-6">
+                    <label class="block text-gray-700 mb-2 text-lg">选择日期</label>
+                    <input type="date" id="dateInput" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-gray-400 text-lg">
+                </div>
+                <button id="calculateBtn" class="w-full bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors text-lg mb-6">
+                    获取穿搭指南
+                </button>
+                <div id="result" class="mt-6">
+                    <div id="resultText" class="text-left"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色功能 -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">特色功能</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-bold mb-4">精准算法</h3>
+                        <p class="text-gray-600">基于传统干支历法，精确计算您的命理属性</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-bold mb-4">专业指导</h3>
+                        <p class="text-gray-600">根据五行相生相克原理，为您推荐最佳着装颜色</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-bold mb-4">个性化建议</h3>
+                        <p class="text-gray-600">结合现代时尚理念，打造专属于您的穿搭方案</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使用方法 -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">使用方法</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-2">选择日期</h3>
+                    <p class="text-gray-600">输入您想要查询的具体日期</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-2">系统计算</h3>
+                    <p class="text-gray-600">自动转换为干支历并分析五行属性</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-2">获取建议</h3>
+                    <p class="text-gray-600">立即获得适合您的着装颜色推荐</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">常见问题</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">五行与穿衣搭配有什么关系？</h3>
+                    <p class="text-gray-600">五行理论是东方传统文化的精髓，通过了解个人的五行属性，可以选择最适合的颜色来增强运势。</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">如何确定自己的五行属性？</h3>
+                    <p class="text-gray-600">根据您选择的日期，系统会自动计算出相应的干支，并确定对应的五行属性。</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl font-bold mb-2">推荐的颜色是否需要每天都穿？</h3>
+                    <p class="text-gray-600">建议在重要场合优先选择推荐颜色，日常可以灵活搭配。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">联系我们</h3>
+                    <p>邮箱：umrxdm33@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">关注我们</h3>
+                    <p>获取最新的穿搭指南和时尚资讯</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
